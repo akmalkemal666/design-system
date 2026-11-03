@@ -1,0 +1,41 @@
+.header { display: flex; align-items: center; justify-content: space-between; min-height: 76px; padding: 0 34px; background: #fff; border-bottom: 1px solid var(--color-border); }
+.header__breadcrumb { color: var(--color-muted); font-size: 12px; }
+.header__breadcrumb span { margin: 0 9px; color: #c4cad5; }
+.header__breadcrumb strong { color: var(--color-text); }
+.header__actions, .header__profile { display: flex; align-items: center; }
+.header__actions { gap: 25px; }
+.header__notification, .header__menu { position: relative; display: grid; width: 38px; height: 38px; place-items: center; color: #69758a; background: #fff; border: 1px solid var(--color-border); border-radius: 10px; }
+.header__notification i { position: absolute; top: 8px; right: 8px; width: 6px; height: 6px; background: #ef6464; border: 1px solid #fff; border-radius: 50%; }
+.header__popover-wrap { position: relative; }
+.header__profile { gap: 10px; padding: 0; color: inherit; background: transparent; border: 0; cursor: pointer; text-align: left; }
+.header__profile:focus-visible, .header__notification:focus-visible { outline: 2px solid var(--color-primary); outline-offset: 3px; }
+.header__avatar { display: grid; width: 36px; height: 36px; place-items: center; color: var(--color-primary); background: var(--color-primary-soft); border-radius: 50%; font-weight: 800; }
+.header__profile-copy { display: grid; gap: 2px; }
+.header__profile-copy strong { font-size: 12px; }
+.header__profile-copy span { color: var(--color-muted); font-size: 10px; }
+.header__profile > svg { color: var(--color-muted); }
+.header__popover { position: absolute; top: calc(100% + 12px); right: 0; z-index: 15; width: min(340px, calc(100vw - 28px)); overflow: hidden; background: #fff; border: 1px solid var(--color-border); border-radius: 12px; box-shadow: 0 12px 32px rgba(28, 42, 82, .14); }
+.header__popover--profile { width: min(300px, calc(100vw - 28px)); padding: 16px; }
+.header__popover-heading { display: flex; align-items: center; justify-content: space-between; padding: 15px 16px 12px; border-bottom: 1px solid var(--color-border); font-size: 13px; }
+.header__popover-heading span { color: var(--color-muted); font-size: 11px; }
+.header__notification-list { max-height: 330px; margin: 0; padding: 0; overflow-y: auto; list-style: none; }
+.header__notification-list li + li { border-top: 1px solid var(--color-border); }
+.header__notification-list a { display: grid; gap: 5px; padding: 13px 16px; }
+.header__notification-list a:hover, .header__account-link:hover { background: #f7f8fc; }
+.header__notification-list strong { color: var(--color-text); font-size: 11px; }
+.header__notification-list span { color: var(--color-muted); font-size: 11px; }
+.header__empty { margin: 0; padding: 18px 16px; color: var(--color-muted); font-size: 11px; }
+.header__account { display: flex; align-items: center; gap: 11px; }
+.header__account-icon { display: grid; width: 38px; height: 38px; flex: 0 0 auto; place-items: center; color: var(--color-primary); background: var(--color-primary-soft); border-radius: 50%; }
+.header__account > span:last-child { display: grid; gap: 4px; min-width: 0; }
+.header__account strong { overflow: hidden; font-size: 12px; text-overflow: ellipsis; white-space: nowrap; }
+.header__account small { color: var(--color-muted); font-size: 10px; }
+.header__account-note { margin: 13px 0 10px; color: var(--color-muted); font-size: 10px; line-height: 1.5; }
+.header__account-link { display: block; margin: 0 -16px; padding: 11px 16px; color: var(--color-text); border-top: 1px solid var(--color-border); font-size: 11px; font-weight: 600; }
+.header__signout, .header__signin { display: flex; align-items: center; gap: 8px; width: 100%; padding: 11px 0 0; color: var(--color-danger); background: transparent; border: 0; border-top: 1px solid var(--color-border); font-size: 11px; font-weight: 600; text-align: left; cursor: pointer; }
+.header__signin { color: var(--color-primary); }
+.header__signout:hover, .header__signin:hover { opacity: .8; }
+.header__error { margin: 10px 0 0; color: var(--color-danger); font-size: 10px; line-height: 1.5; }
+.header__menu { display: none; }
+@media (max-width: 850px) { .header { min-height: 62px; padding: 0 18px; } .header__menu { display: grid; } .header__breadcrumb { margin-right: auto; margin-left: 12px; } .header__actions { gap: 12px; } .header__profile-copy, .header__profile > svg { display: none; } }
+@media (max-width: 480px) { .header__popover--notifications { right: -54px; } .header__popover--profile { right: 0; } }

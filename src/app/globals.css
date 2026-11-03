@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap");
+
+:root {
+  /* Design tokens: color */
+  --color-primary: #3157d5;
+  --color-primary-dark: #2444b6;
+  --color-primary-soft: #edf1ff;
+  --color-success: #16865b;
+  --color-success-soft: #e8f7ef;
+  --color-warning: #b7791f;
+  --color-warning-soft: #fff5df;
+  --color-danger: #c24141;
+  --color-text: #172033;
+  --color-muted: #758096;
+  --color-border: #e8ebf2;
+  --color-surface: #ffffff;
+  --color-background: #f6f7fb;
+
+  /* Design tokens: typography */
+  --font-body: "DM Sans", Arial, sans-serif;
+  --font-heading: "Plus Jakarta Sans", Arial, sans-serif;
+
+  /* Design tokens: spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* Design tokens: radius and shadow */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --shadow-card: 0 8px 28px rgba(28, 42, 82, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  color: #fff;
+  background: var(--color-primary);
+}

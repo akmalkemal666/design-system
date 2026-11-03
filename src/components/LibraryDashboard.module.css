@@ -1,0 +1,35 @@
+.dashboard { min-height: 100vh; }
+.dashboard__main { min-height: 100vh; margin-left: 246px; }
+.dashboard__content { padding-top: 30px; padding-bottom: 20px; }
+.welcome { position: relative; display: flex; min-height: 245px; overflow: hidden; padding: 30px 38px; color: #fff; background: linear-gradient(112deg, #263f9d 0%, #3157d5 62%, #5476e8 100%); border-radius: var(--radius-lg); }
+.welcome__copy { position: relative; z-index: 2; max-width: 470px; }
+.welcome__eyebrow { display: inline-flex; align-items: center; gap: 6px; color: #dce4ff; font-size: 10px; font-weight: 800; letter-spacing: 1.3px; }
+.welcome h1 { margin: 13px 0 9px; font: 800 29px/1.25 var(--font-heading); letter-spacing: -1px; }
+.welcome h1 span { color: #c6d4ff; }
+.welcome__copy p { max-width: 390px; margin: 0 0 19px; color: #e0e7ff; font-size: 12px; line-height: 1.7; }
+.welcome__art { position: absolute; top: 0; right: 0; width: 43%; height: 100%; }
+.welcome__circle { position: absolute; top: -100px; right: 28px; width: 340px; height: 340px; border: 1px solid rgba(255,255,255,.2); border-radius: 50%; box-shadow: 0 0 0 35px rgba(255,255,255,.04), 0 0 0 70px rgba(255,255,255,.035); }
+.welcome__book { position: absolute; display: grid; place-items: center; width: 102px; height: 145px; padding: 12px; color: #263f9d; background: #f7dba6; border-radius: 5px 10px 10px 5px; box-shadow: 8px 12px 20px rgba(12,22,70,.22); font: 800 13px/1.5 var(--font-heading); text-align: center; transform: rotate(-13deg); }
+.welcome__book--one { top: 56px; right: 190px; background: #f7dba6; }
+.welcome__book--two { top: 38px; right: 82px; color: #fff; background: #d77d75; transform: rotate(10deg); }
+.welcome__book--three { top: 92px; right: 5px; color: #fff; background: #8aa4e9; transform: rotate(17deg); }
+.stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 22px; }
+.catalog { padding-top: 36px; scroll-margin-top: 20px; }
+.catalog__heading { display: flex; align-items: end; justify-content: space-between; gap: 15px; }
+.catalog__eyebrow { color: var(--color-primary); font-size: 10px; font-weight: 800; letter-spacing: 1.2px; }
+.catalog__heading h2 { margin: 6px 0 4px; font: 800 21px var(--font-heading); letter-spacing: -.5px; }
+.catalog__heading p { margin: 0; color: var(--color-muted); font-size: 12px; }
+.catalog__count { padding-bottom: 3px; color: var(--color-muted); font-size: 11px; }
+.catalog__tools { display: flex; flex-direction: column; gap: 14px; margin: 20px 0; }
+.catalog__search { width: min(390px, 100%); }
+.catalog__filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.catalog__filter { padding: 8px 13px; color: #737e93; background: #fff; border: 1px solid var(--color-border); border-radius: 8px; font-size: 11px; font-weight: 600; transition: .2s; }
+.catalog__filter:hover { border-color: var(--color-primary); color: var(--color-primary); }
+.catalog__filter--active { color: #fff; background: var(--color-primary); border-color: var(--color-primary); }
+.catalog__grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.catalog__empty { padding: 40px 20px; color: var(--color-muted); background: #fff; border: 1px dashed #cfd5e1; border-radius: var(--radius-md); text-align: center; }
+.footer { padding: 32px 0 10px; color: #9aa3b4; font-size: 10px; text-align: center; }
+@media (max-width: 1100px) { .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); } .catalog__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .welcome__art { opacity: .75; } }
+@media (max-width: 850px) { .dashboard__main { margin-left: 0; } .dashboard__content { padding-top: 20px; } }
+@media (max-width: 600px) { .welcome { min-height: 280px; padding: 25px 22px; } .welcome h1 { font-size: 25px; } .welcome__copy { max-width: 100%; } .welcome__copy p { max-width: 260px; } .welcome__art { right: -70px; width: 55%; opacity: .28; } .stats { gap: 10px; } .catalog { padding-top: 28px; } .catalog__heading { align-items: start; flex-direction: column; } .catalog__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } }
+@media (max-width: 380px) { .catalog__grid { grid-template-columns: 1fr; } .book-card__cover-wrap { height: 210px; } }

@@ -1,0 +1,15 @@
+.ui-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 44px;
+  padding: 0 14px;
+  color: var(--color-muted);
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+.ui-input:focus-within { border-color: var(--color-primary); box-shadow: 0 0 0 3px rgba(49,87,213,.1); }
+.ui-input input { width: 100%; border: 0; outline: 0; color: var(--color-text); background: transparent; }
+.ui-input input::placeholder { color: #9aa3b4; }

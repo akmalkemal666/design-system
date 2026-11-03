@@ -1,0 +1,5 @@
+.ui-badge { display: inline-flex; align-items: center; width: fit-content; padding: 5px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+.ui-badge--success { color: var(--color-success); background: var(--color-success-soft); }
+.ui-badge--warning { color: var(--color-warning); background: var(--color-warning-soft); }
+.ui-badge--neutral { color: #667085; background: #f0f2f6; }
+.ui-badge--primary { color: var(--color-primary); background: var(--color-primary-soft); }

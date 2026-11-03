@@ -1,0 +1,9 @@
+.stat-card { position: relative; padding: 18px; }
+.stat-card__icon { display: grid; width: 38px; height: 38px; margin-bottom: 15px; place-items: center; border-radius: 11px; }
+.stat-card__icon--books { color: #3157d5; background: #edf1ff; }
+.stat-card__icon--available { color: #16865b; background: #e8f7ef; }
+.stat-card__icon--borrowed { color: #b7791f; background: #fff5df; }
+.stat-card__icon--members { color: #8757c8; background: #f3edff; }
+.stat-card__label { color: var(--color-muted); font-size: 12px; }
+.stat-card__value { margin: 4px 0; font: 800 25px var(--font-heading); letter-spacing: -.8px; }
+.stat-card__note { color: #9aa3b4; font-size: 10px; }
